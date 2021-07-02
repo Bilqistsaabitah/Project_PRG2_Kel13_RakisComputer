@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD7BD3EF-2946-4496-A756-BD481B30CCCD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_PRG2_Kel12_RakisComputer</RootNamespace>
+    <AssemblyName>Project_PRG2_Kel12_RakisComputer</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\BUNIFU\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\DATABASE\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutAplikasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutAplikasi.Designer.cs">
+      <DependentUpon>AboutAplikasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="db_Rakis_computerrDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_Rakis_computerrDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPaket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterPaket.Designer.cs">
+      <DependentUpon>MasterPaket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAdmin.Designer.cs">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahDistributor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahDistributor.Designer.cs">
+      <DependentUpon>TambahDistributor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahJenisProduk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahJenisProduk.Designer.cs">
+      <DependentUpon>TambahJenisProduk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahMember.Designer.cs">
+      <DependentUpon>TambahMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahPaket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahPaket.Designer.cs">
+      <DependentUpon>TambahPaket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahPegawai.Designer.cs">
+      <DependentUpon>TambahPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahPO.Designer.cs">
+      <DependentUpon>TambahPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahProduk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahProduk.Designer.cs">
+      <DependentUpon>TambahProduk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDistributor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterDistributor.Designer.cs">
+      <DependentUpon>MasterDistributor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterJenisProduk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterJenisProduk.Designer.cs">
+      <DependentUpon>MasterJenisProduk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMember.Designer.cs">
+      <DependentUpon>MasterMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterPegawai.Designer.cs">
+      <DependentUpon>MasterPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPenjualanProduk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterPenjualanProduk.Designer.cs">
+      <DependentUpon>MasterPenjualanProduk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterPO.Designer.cs">
+      <DependentUpon>MasterPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterProduk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterProduk.Designer.cs">
+      <DependentUpon>MasterProduk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterService.Designer.cs">
+      <DependentUpon>MasterService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TambahService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahService.Designer.cs">
+      <DependentUpon>TambahService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahDistributor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahDistributor.Designer.cs">
+      <DependentUpon>UbahDistributor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahJenisProduk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahJenisProduk.Designer.cs">
+      <DependentUpon>UbahJenisProduk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahMember.Designer.cs">
+      <DependentUpon>UbahMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahPaket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahPaket.Designer.cs">
+      <DependentUpon>UbahPaket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahPegawai.Designer.cs">
+      <DependentUpon>UbahPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahPO.Designer.cs">
+      <DependentUpon>UbahPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahProduk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahProduk.Designer.cs">
+      <DependentUpon>UbahProduk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahService.Designer.cs">
+      <DependentUpon>UbahService.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutAplikasi.resx">
+      <DependentUpon>AboutAplikasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterPaket.resx">
+      <DependentUpon>MasterPaket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAdmin.resx">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahDistributor.resx">
+      <DependentUpon>TambahDistributor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahJenisProduk.resx">
+      <DependentUpon>TambahJenisProduk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahMember.resx">
+      <DependentUpon>TambahMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahPaket.resx">
+      <DependentUpon>TambahPaket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahPegawai.resx">
+      <DependentUpon>TambahPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterDistributor.resx">
+      <DependentUpon>MasterDistributor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterJenisProduk.resx">
+      <DependentUpon>MasterJenisProduk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterMember.resx">
+      <DependentUpon>MasterMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterPegawai.resx">
+      <DependentUpon>MasterPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterPenjualanProduk.resx">
+      <DependentUpon>MasterPenjualanProduk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterPO.resx">
+      <DependentUpon>MasterPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterProduk.resx">
+      <DependentUpon>MasterProduk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterService.resx">
+      <DependentUpon>MasterService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TambahPO.resx">
+      <DependentUpon>TambahPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahProduk.resx">
+      <DependentUpon>TambahProduk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahService.resx">
+      <DependentUpon>TambahService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahDistributor.resx">
+      <DependentUpon>UbahDistributor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahJenisProduk.resx">
+      <DependentUpon>UbahJenisProduk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahMember.resx">
+      <DependentUpon>UbahMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahPaket.resx">
+      <DependentUpon>UbahPaket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahPegawai.resx">
+      <DependentUpon>UbahPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahPO.resx">
+      <DependentUpon>UbahPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahProduk.resx">
+      <DependentUpon>UbahProduk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahService.resx">
+      <DependentUpon>UbahService.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="db_Rakis_computerrDataSet.xsc">
+      <DependentUpon>db_Rakis_computerrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_Rakis_computerrDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_Rakis_computerrDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_Rakis_computerrDataSet.xss">
+      <DependentUpon>db_Rakis_computerrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kebawah.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_home_30px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_exit_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_checkout_30px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_tasks_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_shopping_basket_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-tag-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_maintenance_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_checkout_30px_21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_decrease_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_signal_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_reboot_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_new_job_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kebawah1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_shopping_bag_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_delete_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kebawah2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
